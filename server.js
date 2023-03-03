@@ -81,6 +81,7 @@ bot.onText(/\/debug/, async (msg) => {
 });
 
 bot.onText(/\/start/, async (msg) => {
+  console.log('/start')
   const chatId = msg.chat.id;
   const lang = msg.from.language_code;
   const user_id = msg.from.id;
