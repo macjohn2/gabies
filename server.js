@@ -1,5 +1,4 @@
 const TelegramBot = require("node-telegram-bot-api")
-const express = require("express")
 
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
 
@@ -128,12 +127,3 @@ bot.onText(/\/validar/, async (msg) => {
 
   bot.sendMessage(chatId, str, REMOVE);
 });
-
-// Use Webhooks for the production server
-  const app = express();
-  app.use(express.json());
-
-  const PORT = process.env.PORT || 3000;
-  app.listen(PORT, () => {
-    console.log(`Bot listening on port ${PORT}`);
-  });
