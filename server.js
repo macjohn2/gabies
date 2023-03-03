@@ -4,6 +4,7 @@ const express = require("express")
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
+console.log('new bot')
 
 const REMOVE = {
   disable_notification: true,
