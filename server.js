@@ -55,6 +55,10 @@ bot.on("text", (msg) => {
     return;
   }
 
+  if (!gabies[user_id]) {
+    return
+  }
+  
   if (!gabies[user_id].ruta) {
     gabies[user_id].ruta = txt;
     const str = `Has escollit la ruta ${txt}`;
