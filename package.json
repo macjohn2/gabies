@@ -1,7 +1,7 @@
 {
   "name": "gabies-bot",
   "scripts": {
-    "start": "node server.js"
+    "start": ""
   },
   "engines": {
     "node": "14.x"
